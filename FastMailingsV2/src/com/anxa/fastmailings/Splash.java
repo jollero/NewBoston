@@ -9,8 +9,8 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-//import com.crashlytics.android.Crashlytics;
-//import io.fabric.sdk.android.Fabric;
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 
 
 public class Splash extends Activity{
@@ -23,7 +23,7 @@ public class Splash extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		//Fabric.with(this, new Crashlytics());
+		Fabric.with(this, new Crashlytics());
 
 		setContentView(R.layout.splash);
 	

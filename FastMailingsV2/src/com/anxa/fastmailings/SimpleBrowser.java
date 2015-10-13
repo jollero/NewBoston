@@ -1,9 +1,11 @@
 package com.anxa.fastmailings;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -56,7 +58,13 @@ public class SimpleBrowser extends Activity implements OnClickListener{
 		switch(v.getId()){
 		
 		case R.id.bGoBrowser:
-			ourBrowser.loadUrl(etBrowserURL.getText().toString());
+			String URL =etBrowserURL.getText().toString();
+			
+			if (!URL.contains("http://")) URL = "http://" + URL;
+			
+			ourBrowser.loadUrl(URL);
+			InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+			imm.hideSoftInputFromWindow(etBrowserURL.getApplicationWindowToken(), 0);
 			break;
 		
 		case R.id.bGoBackAPage:
