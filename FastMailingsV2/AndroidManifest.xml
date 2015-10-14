@@ -108,6 +108,14 @@
             android:name=".Flipper"
             android:label="@string/app_name" >
         </activity> 
+        <activity
+            android:name=".SharedPrefs"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name=".InternalData"
+            android:label="@string/app_name" >
+        </activity> 
          <meta-data
             android:name="io.fabric.ApiKey"
             android:value="19158a506e4ba7ce8ed3adfd6b751e78809f4d41" />
