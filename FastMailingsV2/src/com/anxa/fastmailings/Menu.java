@@ -14,7 +14,7 @@ public class Menu extends ListActivity {
 
 
 
-	String classes[] = {"MainActivity","Text","Email","Camera","Data","imagebuttons","GFX","GFXSurface","SoundStuff","Slider","Tabs","SimpleBrowser","Flipper","SharedPrefs","InternalData"};
+	String classes[] = {"MainActivity","Text","Email","Camera","Data","imagebuttons","GFX","GFXSurface","SoundStuff","Slider","Tabs","SimpleBrowser","Flipper","SharedPrefs","InternalData","ExternalData"};
 	
 	
 	
